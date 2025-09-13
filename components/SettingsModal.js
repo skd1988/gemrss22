@@ -199,20 +199,20 @@ const SettingsModal = ({
             <div className="mb-6 bg-gray-900/50 p-4 rounded-lg border border-gray-700">
                 <h4 className="font-semibold mb-2 text-gray-200">{t('settingsModal.instructionsTitle')}</h4>
                 <ol className="list-decimal list-inside text-gray-400 space-y-2 text-sm">
-                    {t('settingsModal.instructions').split('|').map((item, index) => {
+                    {t('settingsModal.instructions', {}).split('|').map((item, index) => {
                         if (index === 2) { // Special handling for the Redirect URI instruction
                              return (
-                             <li key={index}>
-                                <span dangerouslySetInnerHTML={{ __html: item }} />
-                                <input
-                                  type="text"
-                                  readOnly
-                                  value={REDIRECT_URI}
-                                  className="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded mt-1 p-1 text-xs"
-                                  onFocus={(e) => e.target.select()}
-                                />
-                            </li>
-                            );
+                               <li key={index}>
+                                  <span dangerouslySetInnerHTML={{ __html: item }} />
+                                  <input
+                                    type="text"
+                                    readOnly
+                                    value={REDIRECT_URI}
+                                    className="w-full bg-gray-700 text-gray-200 border border-gray-600 rounded mt-1 p-1 text-xs"
+                                    onFocus={(e) => e.target.select()}
+                                  />
+                              </li>
+                             );
                         }
                         return <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
                     })}

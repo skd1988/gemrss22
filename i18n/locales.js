@@ -38,12 +38,7 @@ export const fa = {
     geminiApiKeyPlaceholder: "کلید API خود را اینجا وارد کنید",
     saveButton: "ذخیره کلید",
     instructionsTitle: "چگونه اطلاعات را دریافت کنیم؟",
-    instructions: [
-        'به بخش <a href="https://www.inoreader.com/preferences/developer" target="_blank" rel="noopener noreferrer" class="text-orange-400 hover:underline">Developers</a> در تنظیمات Inoreader بروید.',
-        "یک اپلیکیشن جدید بسازید.",
-        'در قسمت "Redirect URIs"، مقدار زیر را <strong>دقیقا</strong> وارد کنید:',
-        "<strong>OAuth Client ID</strong> و <strong>OAuth Client secret</strong> را کپی کرده و در کادرهای زیر وارد کنید.",
-    ].join('|'),
+    instructions: 'به بخش <a href="https://www.inoreader.com/preferences/developer" target="_blank" rel="noopener noreferrer" class="text-orange-400 hover:underline">Developers</a> در تنظیمات Inoreader بروید.|یک اپلیکیشن جدید بسازید.|در قسمت "Redirect URIs"، مقدار زیر را <strong>دقیقا</strong> وارد کنید:|<strong>OAuth Client ID</strong> و <strong>OAuth Client secret</strong> را کپی کرده و در کادرهای زیر وارد کنید.',
     clientIdLabel: "OAuth Client ID",
     clientIdPlaceholder: "شناسه کلاینت OAuth خود را وارد کنید",
     clientSecretLabel: "OAuth Client Secret",
