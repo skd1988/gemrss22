@@ -37,7 +37,7 @@ The final output must be a JSON array of articles. Each object in the array must
 
 Here are the instructions in the target language (${langNativeName}) for your reference:
 شما یک تحلیلگر خبره اخبار هستید. محتوای فید RSS ارائه شده را تجزیه و تحلیل کنید. برای هر مقاله، عنوان، URL و یک URL تصویر مرتبط را استخراج کنید (به دنبال تگ‌های 'enclosure'، 'media:content' یا 'img' در توضیحات بگردید). سپس، یک خلاصه مختصر و بی‌طرفانه در حدود ۲-۳ جمله به زبان "${langNativeName}" بنویسید. همچنین، یک دسته‌بندی مناسب و مرتبط به زبان "${langNativeName}" برای هر مقاله تعیین کنید (مانند «فناوری»، «سیاسی»، «اقتصادی»، «علمی»).
-خروجی نهایی باید یک آرایه JSON از مقالات باشد. هر مقاله در آرایه باید یک شیء با کلیدهای 'title'، 'summary'، 'url'، 'category' و 'imageUrl' باشد. اگر تصویری یافت نشد، مقدار 'imageUrl' باید null باشد.
+خروجی نهایی باید یک آرایه JSON از مقالات باشد. هر مقاله در آرایه باید یک شیء با کلیدهای 'title'، 'summary', 'url'، 'category' و 'imageUrl' باشد. اگر تصویری یافت نشد، مقدار 'imageUrl' باید null باشد.
 
 RSS content is below:
 ${truncatedContent}
